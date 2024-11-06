@@ -9,23 +9,52 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
+      "name": "Pricing",
       "url": "/posts"
     },
     {
-      "name": "Pages",
+      "name": "Services",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Elements",
-          "url": "/elements"
+          "name": "Strategy and Planning",
+          "url": "/strategy-planning"
         },
         {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
+          "name": "Content Creation",
+          "url": "/content-creation"
+        },
+        {
+          "name": "Social Media Management",
+          "url": "/social-media-management"
+        },
+        {
+          "name": "Paid Social Media Advertising",
+          "url": "/paid-social-media-advertising"
+        },
+        {
+          "name": "Influencer Marketing",
+          "url": "/influencer-marketing"
+        },
+        {
+          "name": "Analytics and Reporting",
+          "url": "/analytics-reporting"
+        },
+        {
+          "name": "Training and Education",
+          "url": "/training-education"
+        },
+        {
+          "name": "Additional Services",
+          "url": "/additional-services"
+        },
+        {
+          "name": "Specialized Services",
+          "url": "/specialized-services"
         }
       ]
+      
     },
     {
       "name": "Contact",

@@ -6,43 +6,43 @@ draft: false
 ## about us
 about_us:
   subtitle: WHO WE ARE
-  title: Hello, We’re Andromeda Here For Your Help
-  content: Your online Health & Fitness companion that offers free assistance on its Facebook Group and provides quality paid guided personal training packages by and through website. We are the first ever, online manifesto in Bangladesh to make place you will select when you think of getting fit
+  title: Welcome to Monks Minds – Your Partner in Digital Growth
+  content: Monks Minds is your go-to team for impactful digital solutions. From social media management to SEO, app development to video production, we are dedicated to elevating brands through mindful media and meaningful results.
   image: /images/about/01.jpg
 
 ## our works
 works:
-  subtitle: OUR WORKS
+  subtitle: OUR SERVICES
   title: What We Do
   list:
-    - title: Building A New Class
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Design For Anyone
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Creative Flair Design
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Building Products
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
+    - title: Social Media Management
+      content: Drive engagement and build a loyal following with our targeted social media strategies. We handle content creation, community management, and performance analytics to enhance your digital footprint.
+    - title: Web & App Development
+      content: Transform your vision into user-friendly websites and mobile apps that captivate audiences. Our team focuses on design, functionality, and responsiveness to make a lasting impact.
+    - title: Video Production & Editing
+      content: Create compelling visual content that tells your story. Our video editing and production services ensure your brand shines across all digital platforms.
+    - title: SEO & Copywriting
+      content: Boost your visibility and connect with your audience through optimized content. Our SEO and copywriting services drive traffic and engage users with every click.
 
 ## our mission
 mission:
   subtitle: OUR MISSION
-  title: Main Vision And Mission Of Our Company
-  content: We were freelance designers and developers, constantly finding ourselve deep vague feedback. leaving a notes from the sticky note piece .
+  title: Vision and Mission of Monks Minds
+  content: Our mission is to empower brands with authentic digital strategies that deliver meaningful connections and real results. As your digital partner, we’re committed to creativity, consistency, and collaboration.
   image: /images/about/02.jpg
 
 ## short video
 video:
   subtitle: A SHORT VIDEO
-  title: You Take Care Of The Payments, We Take Care Of The Rest.
-  description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistcy throughout the.
+  title: Your Growth, Our Priority
+  description: Learn more about our approach and see how Monks Minds can bring your brand to life across all digital channels. We handle the details so you can focus on the big picture.
   video_id: dyZcRRWiuuw
   thumbnail: /images/about/video-popup-2.jpg
 
 ## clients
 clients:
   subtitle: OUR CLIENTS
-  title: Trusted By Thousands Companies
+  title: Trusted by Leading Brands
   brands:
     - /images/brands/01-colored.png
     - /images/brands/02-colored.png
@@ -50,45 +50,42 @@ clients:
     - /images/brands/04-colored.png
     - /images/brands/05-colored.png
     - /images/brands/06-colored.png
-    - /images/brands/04-colored.png
-    - /images/brands/05-colored.png
-    - /images/brands/06-colored.png
-
+    - /images/brands/07-colored.png
+    - /images/brands/08-colored.png
 
 ## members
 our_member:
-  subtitle: OUR MEMBERS
-  title: The People Behind
-  content: We were freelance designers and developers, constantly finding </br> ourselves deep in vague feedback. This made every client and team
+  subtitle: OUR TEAM
+  title: The Minds Behind Monks Minds
+  content: Our team is made up of experts in strategy, design, and technology who work together to provide our clients with unparalleled digital solutions. </br> Meet the dedicated professionals behind the success of Monks Minds.
   list:
     - name: Valentin Staykov
-      field: Operations
+      field: Head of Operations
       image: /images/about/team/01.jpg
     - name: Bukiakta Bansalo
-      field: Product
+      field: Product Development Lead
       image: /images/about/team/02.jpg
     - name: Ortrin Okaster
-      field: Engineering
+      field: Engineering Specialist
       image: /images/about/team/03.jpg
 
 ## office
 our_office:
   subtitle: OUR OFFICES
-  title: Made With Love Of Around The </br> World With Many Offices
-  content: We were freelance designers and developers, constantly finding </br> ourselves deep in vague feedback. This made every client and team
+  title: Globally Connected, Locally Focused
+  content: With offices in multiple countries, we bring global expertise and local insights to every project. Monks Minds is dedicated to fostering creativity and collaboration worldwide.
   countries:
     - flag: /images/about/flags/us.png
-      name: NewYork, USA
-      location: 219 Bald Hill Drive Oakland Gardens, NY 11364
+      name: New York, USA
+      location: 219 Bald Hill Drive, Oakland Gardens, NY 11364
     - flag: /images/about/flags/au.png
-      name: Australia, Perth
-      location: Flat 23 80 Anthony Circlet Port Guiseppe, TAS 2691
-    - flag:  /images/about/flags/germany.png
+      name: Perth, Australia
+      location: Flat 23, 80 Anthony Circle, Port Guiseppe, TAS 2691
+    - flag: /images/about/flags/germany.png
       name: Berlin, Germany
-      location: Jl Raya Dewi Sartika Ged Harapan Masa, Br Germeny
-    - flag:  /images/about/flags/china.png
-      name: China, Wohan
-      location: 1hao Wen Ti Huo Dong Zhong Xin 1ceng Jian Xing
+      location: Jl Raya Dewi Sartika, Ged Harapan Masa, Berlin
+    - flag: /images/about/flags/china.png
+      name: Wuhan, China
+      location: 1hao Wen Ti Huo Dong, Zhong Xin 1ceng Jian Xing
 
 ---
-

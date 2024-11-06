@@ -153,7 +153,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
           <div className="row overflow-hidden rounded-2xl">
             <div className="col-12">
               <div className="row relative justify-center pb-10">
-                <div className="banner-content col-10 pb-10 pt-20 text-center">
+                <div className="banner-content col-10 pb-10 pt-20 px-20 text-center">
                   {markdownify(
                     bannerData.title,
                     "h1",

@@ -3,10 +3,10 @@
     "title": "Andromeda Light Nextjs",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
+    "logo": "/images/Monks/logo+bg.png",
     "logo_width": "240",
-    "logo_height": "34",
-    "logo_text": "Andromeda"
+    "logo_height": "60",
+    "logo_text": "Monks Minds"
   },
 
   "settings": {
@@ -30,8 +30,8 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Download Now",
-    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    "label": "Contact us",
+    "link": "/contact"
   },
 
   "metadata": {
@@ -42,7 +42,7 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "Get Andromeda Now",
+    "title": "Get Monks Minds Now",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
     "button": {
       "label": "Download The Theme",
