@@ -10,7 +10,26 @@
     },
     {
       "name": "Pricing",
-      "url": "/pricing"
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Social Media Management",
+          "url": "/socialMediaManagement"
+        },
+        {
+          "name": "Video Productions",
+          "url": "/videoProduction"
+        },
+        {
+          "name": "Website Development",
+          "url": "/webAppDevelopment"
+        },
+        {
+          "name": "Application Development",
+          "url": "/webAppDevelopment"
+        }
+      ]
     },
     {
       "name": "Services",

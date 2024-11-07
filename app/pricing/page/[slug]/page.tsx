@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
 import { Tabs, TabsList, TabsTrigger } from "@/layouts/components/pricing/ui/tabs"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/layouts/components/pricing/ui/card"
-import { CheckCircle2 } from "lucide-react"
+import { CheckCircle2, Router } from "lucide-react"
 import { Button } from "@/layouts/components/pricing/ui/button"
 import React, { useState } from "react"
 import { cn } from "@/lib/utils/pricing_utils"
+import { useRouter } from 'next/navigation';
 
 type PricingSwitchProps = {
   onSwitch: (value: string) => void
@@ -44,8 +45,9 @@ const PricingSwitch = ({ onSwitch }: PricingSwitchProps) => (
   </Tabs>
 )
 
-const PricingCard = ({ isYearly, title, monthlyPrice, yearlyPrice, description, features, actionLabel, popular, exclusive }: PricingCardProps) => (
-  <Card
+const PricingCard = ({ isYearly, title, monthlyPrice, yearlyPrice, description, features, actionLabel, popular, exclusive, onNavigate }: PricingCardProps & { onNavigate: () => void }) => {
+
+  return (<Card
     className={cn(`w-72 flex flex-col justify-between py-1 ${popular ? "border-rose-400" : "border-zinc-700"} mx-auto sm:mx-0`, {
       "animate-background-shine bg-white dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors":
         exclusive,
@@ -78,13 +80,13 @@ const PricingCard = ({ isYearly, title, monthlyPrice, yearlyPrice, description, 
       </CardContent>
     </div>
     <CardFooter className="mt-2">
-      <Button className="relative inline-flex w-full items-center justify-center rounded-md bg-black text-white dark:bg-white px-6 font-medium  dark:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+      <Button className="relative inline-flex w-full items-center justify-center rounded-md bg-black text-white dark:bg-white px-6 font-medium  dark:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" onClick={onNavigate}>
         <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
         {actionLabel}
       </Button>
     </CardFooter>
-  </Card>
-)
+  </Card>)
+}
 
 const CheckItem = ({ text }: { text: string }) => (
   <div className="flex gap-2">
@@ -93,9 +95,14 @@ const CheckItem = ({ text }: { text: string }) => (
   </div>
 )
 
-var BlogPagination = ()=> {
+var BlogPagination = () => {
   const [isYearly, setIsYearly] = useState(false)
   const togglePricingPeriod = (value: string) => setIsYearly(parseInt(value) === 1)
+  const router = useRouter(); // Get the router instance
+
+  const navigateToContact = ({ route }: { route: string }) => {
+    router.push(route); // Navigation function
+  };
 
   const plans = [
     {
@@ -104,7 +111,8 @@ var BlogPagination = ()=> {
       yearlyPrice: 100,
       description: "Essential features you need to get started",
       features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3"],
-      actionLabel: "Get Started",
+      actionLabel: "Get Started", 
+      routeName: '/contact'
     },
     {
       title: "Pro",
@@ -114,6 +122,7 @@ var BlogPagination = ()=> {
       features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3"],
       actionLabel: "Get Started",
       popular: true,
+      routeName: '/contact'
     },
     {
       title: "Enterprise",
@@ -121,7 +130,8 @@ var BlogPagination = ()=> {
       description: "Dedicated support and infrastructure to fit your needs",
       features: ["Example Feature Number 1", "Example Feature Number 2", "Example Feature Number 3", "Super Exclusive Feature"],
       actionLabel: "Contact Sales",
-      exclusive: true,
+      exclusive: true, 
+      routeName: '/contact'
     },
   ]
   return (
@@ -130,7 +140,7 @@ var BlogPagination = ()=> {
       <PricingSwitch onSwitch={togglePricingPeriod} />
       <section className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-8 mt-8">
         {plans.map((plan) => {
-          return <PricingCard key={plan.title} {...plan} isYearly={isYearly} />
+          return <PricingCard key={plan.title} {...plan} isYearly={isYearly} onNavigate={() => navigateToContact({route: plan.routeName})} />
         })}
       </section>
     </div>

@@ -48,6 +48,12 @@
 
 .nav-dropdown-list {
   @apply z-10 rounded-lg bg-white px-2.5 w-[220px] lg:shadow-sm;
+  opacity: 0;
+}
+
+.nav-dropdown-list.visible {
+  opacity: 1;
+  height: auto; /* or a specific height */
 }
 
 .nav-dropdown-item {
