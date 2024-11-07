@@ -8,7 +8,7 @@ const Contact = ({ data }) => {
 
   return (
     <section className="section">
-      <Banner title={title} />
+      <Banner title={title} subtitle="Have a query? Monks Minds is here to help!"/>
       <div className="container">
         <div className="section row items-center justify-center">
           <div className="animate lg:col-5">

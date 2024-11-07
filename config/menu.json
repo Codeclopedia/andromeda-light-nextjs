@@ -10,7 +10,7 @@
     },
     {
       "name": "Pricing",
-      "url": "/posts"
+      "url": "/pricing"
     },
     {
       "name": "Services",
@@ -67,8 +67,8 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Pricing",
+      "url": "/pricing"
     },
     {
       "name": "Terms & Conditions",

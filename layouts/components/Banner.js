@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import Circle from "./Circle";
 import ImageFallback from "./ImageFallback";
 
-const Banner = ({ title }) => {
+const Banner = ({ title, subtitle = String }) => {
   const banner = useRef(null);
 
   //banner animation
@@ -67,16 +67,8 @@ const Banner = ({ title }) => {
     <div className="banner banner-single " ref={banner}>
       <div className="container-xl ">
         <div className="banner-wrapper relative text-center">
-          {markdownify(title, "h1", "mb-8 banner-regular-title opacity-0")}
-          <ul className="breadcrumb flex items-center justify-center opacity-0">
-            <li>
-              <Link className="text-primary" href="/">
-                Home
-              </Link>
-            </li>
-            <li className="mx-2">/</li>
-            <li className="capitalize">{title}</li>
-          </ul>
+          {markdownify(title, "h1", "mb-3 banner-regular-title opacity-0")}
+          {subtitle!=null? <text className="font-semibold text-lg mb-8 banner-regular-title opacity-0">{subtitle}</text>:<> </>}
           <div className="bg-theme banner-bg col-12 absolute left-0 top-0 bg-theme-light before:hidden after:hidden">
             <ImageFallback
               priority={true}

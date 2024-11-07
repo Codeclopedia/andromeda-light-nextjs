@@ -181,7 +181,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               </div>
             </div>
           </div>
-          <div className="row border-y border-border py-5">
+          {/* <div className="row border-y border-border py-5">
             <div className="animate from-right col-12">
               <Swiper
                 loop={true}
@@ -214,7 +214,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                 ))}
               </Swiper>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
