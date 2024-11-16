@@ -8,7 +8,7 @@ about_us:
   subtitle: WHO WE ARE
   title: Welcome to Monks Minds – Your Partner in Digital Growth
   content: Monks Minds is your go-to team for impactful digital solutions. From social media management to SEO, app development to video production, we are dedicated to elevating brands through mindful media and meaningful results.
-  image: /images/about/01.jpg
+  image: /images/Monks/2.png
 
 ## our works
 works:
@@ -59,14 +59,14 @@ our_member:
   title: The Minds Behind Monks Minds
   content: Our team is made up of experts in strategy, design, and technology who work together to provide our clients with unparalleled digital solutions. </br> Meet the dedicated professionals behind the success of Monks Minds.
   list:
-    - name: Valentin Staykov
+    - name: Ravi upadhyay
       field: Head of Operations
       image: /images/about/team/01.jpg
-    - name: Bukiakta Bansalo
-      field: Product Development Lead
+    - name: Chitra upadhyay
+      field: Senior Executive
       image: /images/about/team/02.jpg
-    - name: Ortrin Okaster
-      field: Engineering Specialist
+    - name: Chetan Joshi
+      field: Head of Development
       image: /images/about/team/03.jpg
 
 ## office

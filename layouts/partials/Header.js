@@ -79,7 +79,7 @@ const Header = () => {
                       {menu.children.map((child, i) => (
                         <li className="nav-dropdown-item" key={`children-${i}`}>
                           <Link
-                            href={`/pricing${child.url}`}
+                            href={`${menu.url}${child.url}`}
                             className={`nav-dropdown-link block transition-all ${
                               asPath === child.url && "active"
                             }`}
