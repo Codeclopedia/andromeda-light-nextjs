@@ -73,4 +73,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  .bg-background {
+    background-color: theme('colors.body'); /* Replace 'body' with the appropriate color key from your theme */
+  }
+  .text-foreground {
+    background-color: theme('colors.body'); /* Replace 'body' with the appropriate color key from your theme */
+  }
 }
