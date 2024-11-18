@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@nextui-org/divider": "^2.0.32",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
@@ -34,6 +35,7 @@
     "react-icons": "^5.3.0",
     "react-lite-youtube-embed": "^2.4.0",
     "react-lite-yt-embed": "^1.2.7",
+    "react-responsive": "^10.0.0",
     "react-syntax-highlighter": "^15.5.0",
     "react-visibility-sensor": "^5.1.1",
     "rehype-highlight": "^7.0.0",

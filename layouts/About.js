@@ -261,7 +261,7 @@ const About = ({ data }) => {
         </div>
 
         {/* Members */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p>{our_member.subtitle}</p>
             {markdownify(our_member.title, "h2", "section-title mt-4")}
@@ -289,7 +289,7 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Office */}
         {/* <div className="section container">

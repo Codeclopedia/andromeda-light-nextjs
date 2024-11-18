@@ -58,7 +58,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/layout.jsx", "layouts/partials/pricingData.js"  ],
   "exclude": [
     "node_modules"
   ]

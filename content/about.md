@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: About Us
 layout: about
 draft: false
 
@@ -50,8 +50,6 @@ clients:
     - /images/brands/04-colored.png
     - /images/brands/05-colored.png
     - /images/brands/06-colored.png
-    - /images/brands/07-colored.png
-    - /images/brands/08-colored.png
 
 ## members
 our_member:

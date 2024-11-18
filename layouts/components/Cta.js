@@ -7,6 +7,7 @@ import ImageFallback from "./ImageFallback";
 function Cta() {
   const { title, content, button, enable } = config.call_to_action;
   if (!enable) return;
+  // const { width, height } = useDeviceSize();
 
   return (
     <section className="cta section pt-0">

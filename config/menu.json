@@ -23,17 +23,17 @@
         },
         {
           "name": "Website Development",
-          "url": "/webAppDevelopment"
+          "url": "/websiteDevelopment"
         },
         {
           "name": "Application Development",
-          "url": "/webAppDevelopment"
+          "url": "/ApplicationDevelopment"
         }
       ]
     },
     {
       "name": "Services",
-      "url": "",
+      "url": "/services",
       "hasChildren": true,
       "children": [
         {
@@ -61,8 +61,8 @@
           "url": "/analytics-reporting"
         },
         {
-          "name": "Training and Education",
-          "url": "/training-education"
+          "name": "Web & App Development",
+          "url": "/web-app-development"
         },
         {
           "name": "Additional Services",

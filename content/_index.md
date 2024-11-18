@@ -1,10 +1,10 @@
 ---
 banner:
-  title: "Monks Minds is the ultimate partner for digital transformation."
+  title: "<Strong>Monks Minds</Strong> is the ultimate partner for digital transformation."
   image: /images/banner-app.png
   link:
     label: View All Services
-    href: "https://themefisher.com/products/andromeda-nextjs"
+    href: "/contact"
 
 ##brands
 brands:
@@ -76,42 +76,32 @@ testimonial:
   subtitle: Real Stories, Real Success
   description: Hear from our clients about how Monks Minds helped elevate their brand presence and drive impactful results across digital platforms.
   list:
-    - author: Sarah Thompson
+    - author: Dr. Satyendra Sewarth
       avatar: /images/user-img/01.jpg
-      profession: CEO, Thrive Solutions
+      profession: Founder, Jagriti Yoga & Naturopathy Sansthan
       content: "Monks Minds transformed our online strategy with a mindful and results-oriented approach. Their team delivered beyond expectations and truly understood our brand."
 
-    - author: John Stevens
+    - author: Siddhant Bhardwaj
       avatar: /images/user-img/02.jpg
-      profession: Founder, GoGlobal Media
+      profession: Co-Founder, Viveza
       content: "From the outset, Monks Minds made the process easy and effective. They crafted a digital presence that resonated with our audience and drove substantial growth."
 
-    - author: Emily White
+    - author: Chitra Joshi
       avatar: /images/user-img/03.jpg
-      profession: Head of Marketing, Greenway Tech
+      profession: Founder, DCR DESIGNS
       content: "Working with Monks Minds was seamless. Their team consistently provided insightful solutions, helping us stay ahead in a competitive market."
 
-    - author: Michael Lee
+    - author: Saurabh Sharma 
       avatar: /images/user-img/04.png
-      profession: CEO, Insight Creators
+      profession: Founder, &Menz
       content: "Professional, insightful, and responsive—Monks Minds delivered a strategy that truly connected with our audience. I recommend them to anyone serious about digital growth."
 
-    - author: Laura Kim
+    - author: Nitin Negi 
       avatar: /images/user-img/05.jpg
-      profession: Creative Director, Innovate Studio
+      profession: Founder, HolidayHike
       content: "With Monks Minds, our content strategy was transformed. The team's creativity and understanding of our goals made all the difference."
 
-    - author: David Cameron
+    - author: Yahor Jeihelo
       avatar: /images/user-img/06.jpg
-      profession: CEO, Nexuspay
+      profession: Founder, Rishikesh Bansuri School
       content: "Monks Minds’ approach is intuitive and effective. They provided us with a robust digital presence and continue to support us with innovative solutions."
-
-    - author: Rachel Green
-      avatar: /images/user-img/07.jpg
-      profession: Digital Marketing Lead, Clear Solutions
-      content: "The Monks Minds team is outstanding. They helped us refine our strategy and deliver content that resonates, reaching our audience in new and meaningful ways."
-
-    - author: Tom Reynolds
-      avatar: /images/user-img/08.jpg
-      profession: Owner, Artisan Cafe
-      content: "A professional and insightful team. Monks Minds helped us navigate the digital world with confidence and drive real results for our brand."
