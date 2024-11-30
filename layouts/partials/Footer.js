@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const { copyright, footer_content } = config.params;
-  const { email, phone, location } = config.contact_info;
+  const { email, phone, location, hr_email } = config.contact_info;
   return (
     <footer className="">
       <div className="container">
@@ -20,9 +20,9 @@ const Footer = () => {
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
             <h3 className="h5">Socials</h3>
             <div className="mt-5">
-              {email && <Link href={`mailto:${email}`}>{email}</Link>}
+              {"Careers -"} {hr_email && <Link href={`mailto:${hr_email}`}>{hr_email}</Link>}
               {/* social icons */}
-              <Social source={social} className="social-icons mt-5" />
+              {/* <Social source={social} className="social-icons mt-5" /> */}
             </div>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
@@ -43,7 +43,8 @@ const Footer = () => {
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
             <h3 className="h5">Location & Contact</h3>
-            <ul className="mt-5 leading-10">
+            <ul className="mt-5 leading-6">
+            <li>{markdownify(email)}</li>
               <li>{markdownify(location)}</li>
               {phone && (
                 <li>

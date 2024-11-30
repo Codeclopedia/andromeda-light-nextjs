@@ -36,8 +36,8 @@ video:
   subtitle: A SHORT VIDEO
   title: Your Growth, Our Priority
   description: Learn more about our approach and see how Monks Minds can bring your brand to life across all digital channels. We handle the details so you can focus on the big picture.
-  video_id: dyZcRRWiuuw
-  thumbnail: /images/about/video-popup-2.jpg
+  video_id: 1Zbu_SrlAo8
+  thumbnail: /images/Monks/What Does.png
 
 ## clients
 clients:

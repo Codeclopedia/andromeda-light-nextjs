@@ -53,8 +53,8 @@ intro:
   title: How we can help you?
   subtitle: Built Exclusively For You
   description: Discover how Monks Minds brings mindful media and meaningful results to life. Watch our short introduction to see how we transform ideas into impactful digital experiences, tailored to meet the unique needs of your brand.
-  thumbnail: "/images/video-popup.jpg"
-  video_id: dyZcRRWiuuw
+  thumbnail: "/images/Monks/What Does.png"
+  video_id: 1Zbu_SrlAo8
 
 # Speciality
 speciality:
