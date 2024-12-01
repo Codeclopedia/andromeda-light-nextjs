@@ -1,30 +1,48 @@
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export async function POST(req) {
+  if (req.method !== 'POST') {
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405 });
+  }
 
-export async function POST(req,res) {
-  if (req.method === 'POST') {
-    const { name, email, subject, message } = req.body;
+  try {
+    // Parse request body
+    const { name, email, subject, message } = await req.json();
 
-    try {
-      res = await resend.emails.send({
-        from: 'joshi.chetan.work@gmail.com',
-        to: process.env.RECIPIENT_EMAIL,
-        subject: `New Contact Form Submission from ${name}`,
-        html: `
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Description:</strong> ${subject}</p>
-          <p><strong>Message:</strong> ${message}</p>
-        `,
-      });
+    // Create a Nodemailer transporter
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail', // Or any SMTP server
+      auth: {
+        user: 'joshichetan014@gmail.com',
+        pass: 'wodu olni gnpf qxch',
+      },
+    });
+  
+    const mailOptions = {
+      from: '"Query Bot" joshichetan014@gmail.com',
+      to: 'rravi2429050@gmail.com',
+      subject: `New Contact Form Submission from ${name}`,
+      html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong> ${message}</p>
+      `,
+    };
 
-      return new Response(JSON.stringify({ message:await res.body }), { status: 200 });
-    } catch (error) {
-      console.error("Error sending email:", error);
-      return new Response(JSON.stringify({ error: "Failed to send email." }), { status: 500 });
-    }
-  } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+    // Send email
+    const info = await transporter.sendMail(mailOptions);
+
+    return new Response(
+      JSON.stringify({ message: 'Email sent successfully!', info }),
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return new Response(
+      JSON.stringify({ error: 'Failed to send email.', details: error.message }),
+      { status: 500 }
+    );
   }
 }
+

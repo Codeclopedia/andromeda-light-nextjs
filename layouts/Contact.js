@@ -142,11 +142,8 @@ const Contact = ({ data }) => {
               </button>
               {status && <p className="mt-4 text-center">{status}</p>}
             </form>
-            {/* Show status message */}
-            {status && <p>{status}</p>}
-
             {/* Loading indicator */}
-            {isLoading && <p className="loading-indicator">Please wait...</p>}
+            {/* {isLoading && <p className="loading-indicator">Please wait...</p>} */}
           </div>
         </div>
       </div>
