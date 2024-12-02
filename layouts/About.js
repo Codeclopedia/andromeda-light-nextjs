@@ -8,6 +8,7 @@ import Circle from "./components/Circle";
 import Cta from "./components/Cta";
 import ImageFallback from "./components/ImageFallback";
 import VideoPopup from "./components/VideoPopup";
+import { useEffect, useState } from "react";
 
 const About = ({ data }) => {
   const { frontmatter } = data;
@@ -21,6 +22,12 @@ const About = ({ data }) => {
     our_member,
     our_office,
   } = frontmatter;
+
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <>
@@ -73,7 +80,7 @@ const About = ({ data }) => {
               </div>
             </div>
             <div className="animate md:col-6 md:order-1 lg:col-4">
-              <p>{about_us.subtitle}</p>
+              {about_us.subtitle}
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
               {markdownify(about_us.content, "p", "mt-10")}
             </div>
@@ -83,7 +90,7 @@ const About = ({ data }) => {
         {/* Works */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{works.subtitle}</p>
+            {works.subtitle}
             {markdownify(works.title, "h2", "section-title mt-4")}
             {markdownify(works.content, "p", "mt-10")}
           </div>
@@ -146,7 +153,7 @@ const About = ({ data }) => {
               </div>
             </div>
             <div className="animate md:col-6 lg:col-4">
-              <p>{mission.subtitle}</p>
+              {mission.subtitle}
               {markdownify(mission.title, "h2", "section-title bar-left mt-4")}
               {markdownify(mission.content, "p", "mt-10")}
             </div>
@@ -202,7 +209,7 @@ const About = ({ data }) => {
           <div className="row items-center justify-center py-[90px]">
             <div className="md:col-6 xl:col-4">
               <div className="animate p-5">
-                <p>{video.subtitle}</p>
+                {video.subtitle}
                 {markdownify(video.title, "h2", "mt-4 section-title bar-left")}
                 {markdownify(video.description, "p", "mt-10")}
               </div>
@@ -223,47 +230,49 @@ const About = ({ data }) => {
         {/* Clients */}
         <div className="section container">
           <div className="animate text-center">
-            <p>{clients.subtitle}</p>
+            {clients.subtitle}
             {markdownify(clients.title, "h2", "section-title mt-4")}
           </div>
-          <div className="animate from-right col-12 mt-16">
-            <Swiper
-              loop={true}
-              slidesPerView={3}
-              breakpoints={{
-                992: {
-                  slidesPerView: 5,
-                },
-              }}
-              spaceBetween={20}
-              modules={[Autoplay]}
-              autoplay={{ delay: 3000 }}
-            >
-              {clients.brands.map((brand, index) => (
-                <SwiperSlide
-                  className=" h-20 cursor-pointer px-6 py-6 grayscale  transition hover:grayscale-0 lg:px-10"
-                  key={"brand-" + index}
-                >
-                  <div className="relative h-full">
-                    <ImageFallback
-                      className="object-contain"
-                      src={brand}
-                      sizes="100vw"
-                      alt=""
-                      fill={true}
-                      priority={true}
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          {isMounted && (
+        <div className="animate from-right col-12 mt-16">
+          <Swiper
+            loop={true}
+            slidesPerView={3}
+            breakpoints={{
+              992: {
+                slidesPerView: 5,
+              },
+            }}
+            spaceBetween={20}
+            modules={[Autoplay]}
+            autoplay={{ delay: 3000 }}
+          >
+            {clients.brands.map((brand, index) => (
+              <SwiperSlide
+                className="h-24 cursor-pointer px-6 grayscale transition hover:grayscale-0 lg:px-10"
+                key={"brand-" + index}
+              >
+                <div className="relative h-full">
+                  <ImageFallback
+                    className="object-contain"
+                    src={brand}
+                    sizes="100vw"
+                    alt=""
+                    fill={true}
+                    priority={true}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      )}
         </div>
 
         {/* Members */}
         {/* <div className="section container">
           <div className="animate text-center">
-            <p>{our_member.subtitle}</p>
+            {our_member.subtitle}
             {markdownify(our_member.title, "h2", "section-title mt-4")}
             {markdownify(our_member.content, "p", "mt-16")}
           </div>
@@ -283,7 +292,7 @@ const About = ({ data }) => {
                       alt={member.name}
                     />
                     <h4 className="mt-8">{member.name}</h4>
-                    <p className="mt-3">{member.field}</p>
+                    <p className="mt-3">{member.field}
                   </div>
                 ))}
               </div>
@@ -294,7 +303,7 @@ const About = ({ data }) => {
         {/* Office */}
         {/* <div className="section container">
           <div className="animate text-center">
-            <p>{our_office.subtitle}</p>
+            {our_office.subtitle}
             {markdownify(our_office.title, "h2", "section-title mt-4")}
             {markdownify(our_office.content, "p", "mt-16")}
           </div>
@@ -315,7 +324,7 @@ const About = ({ data }) => {
                         alt={country.name}
                       />
                       <h5 className="h4 mt-2">{country.name}</h5>
-                      <p className="mt-2">{country.location}</p>
+                      <p className="mt-2">{country.location}
                     </div>
                   </div>
                 ))}

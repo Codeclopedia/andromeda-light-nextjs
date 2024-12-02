@@ -77,31 +77,31 @@ testimonial:
   description: Hear from our clients about how Monks Minds helped elevate their brand presence and drive impactful results across digital platforms.
   list:
     - author: Dr. Satyendra Sewarth
-      avatar: /images/user-img/01.jpg
+      avatar: /images/Monks/user-img/Jyans.jpg
       profession: Founder, Jagriti Yoga & Naturopathy Sansthan
-      content: "Monks Minds transformed our online strategy with a mindful and results-oriented approach. Their team delivered beyond expectations and truly understood our brand."
+      content: "The agency has been instrumental in helping us create a strong digital presence. Their innovative campaigns beautifully communicated our vision of promoting holistic wellness, allowing us to connect with individuals seeking natural and sustainable health solutions."
 
     - author: Siddhant Bhardwaj
-      avatar: /images/user-img/02.jpg
+      avatar: /images/Monks/user-img/Viveza.png
       profession: Co-Founder, Viveza
-      content: "From the outset, Monks Minds made the process easy and effective. They crafted a digital presence that resonated with our audience and drove substantial growth."
+      content: "Working with this digital marketing agency was one of our best decisions. They crafted campaigns that perfectly aligned with Viveza’s ethos, driving engagement and strengthening our presence in a competitive market."
 
     - author: Chitra Joshi
-      avatar: /images/user-img/03.jpg
+      avatar: /images/Monks/user-img/Dcr.jpg
       profession: Founder, DCR DESIGNS
-      content: "Working with Monks Minds was seamless. Their team consistently provided insightful solutions, helping us stay ahead in a competitive market."
+      content: "Their team brought a deep understanding of design and branding, helping us showcase DCR Designs’ work in an impactful way. Their digital strategies enhanced our reach and solidified our position as a leader in innovative interior design."
 
     - author: Saurabh Sharma 
-      avatar: /images/user-img/04.png
+      avatar: /images/Monks/user-img/&menz.png
       profession: Founder, &Menz
-      content: "Professional, insightful, and responsive—Monks Minds delivered a strategy that truly connected with our audience. I recommend them to anyone serious about digital growth."
+      content: "This agency has been phenomenal in positioning Andmenz as a modern and forward-thinking brand. Their tailored marketing approach and results-driven strategies have not only boosted our visibility but also connected us deeply with our target audience."
 
     - author: Nitin Negi 
-      avatar: /images/user-img/05.jpg
+      avatar: /images/Monks/user-img/HolidayHike.png
       profession: Founder, HolidayHike
-      content: "With Monks Minds, our content strategy was transformed. The team's creativity and understanding of our goals made all the difference."
+      content: "Our collaboration with this team significantly enhanced Holiday Hike’s online engagement and customer inquiries. Their travel-focused campaigns inspired wanderlust and helped us turn dreams into bookings, making every campaign a success."
 
     - author: Yahor Jeihelo
-      avatar: /images/user-img/06.jpg
+      avatar: /images/Monks/user-img/Yahor Jeihalo.png
       profession: Founder, Rishikesh Bansuri School
-      content: "Monks Minds’ approach is intuitive and effective. They provided us with a robust digital presence and continue to support us with innovative solutions."
+      content: "As a global artist, my work thrives on meaningful connections with audiences. This team has truly mastered the art of showcasing my music, bringing life to my performances through creative online storytelling that resonates with a global audience."

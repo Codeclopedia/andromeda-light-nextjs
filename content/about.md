@@ -44,12 +44,11 @@ clients:
   subtitle: OUR CLIENTS
   title: Trusted by Leading Brands
   brands:
-    - /images/brands/01-colored.png
-    - /images/brands/02-colored.png
-    - /images/brands/03-colored.png
-    - /images/brands/04-colored.png
-    - /images/brands/05-colored.png
-    - /images/brands/06-colored.png
+    - /images/Monks/user-img/Jyans.jpg
+    - /images/Monks/user-img/Viveza.png
+    - /images/Monks/user-img/Dcr.jpg
+    - /images/Monks/user-img/&menz.png
+    - /images/Monks/user-img/HolidayHike.png
 
 ## members
 our_member:
